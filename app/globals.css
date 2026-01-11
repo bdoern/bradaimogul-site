@@ -1,0 +1,30 @@
+/* Glass + AI aesthetic */
+:root{
+  --bg:#05060b;
+  --glass:rgba(255,255,255,.08);
+  --stroke:rgba(255,255,255,.18);
+  --accent:#6cf0ff;
+  --accent2:#b478ff;
+  --text:rgba(255,255,255,.95);
+  --muted:rgba(255,255,255,.65);
+  --radius:28px;
+  --blur:22px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
+  color:var(--text);
+  background:
+    radial-gradient(1000px 600px at 20% 20%, rgba(108,240,255,.12), transparent 55%),
+    radial-gradient(900px 600px at 80% 70%, rgba(180,120,255,.10), transparent 55%),
+    linear-gradient(180deg,#04050a,#070812);
+}
+.glass{
+  background:var(--glass);
+  border:1px solid var(--stroke);
+  backdrop-filter:blur(var(--blur));
+  border-radius:var(--radius);
+}
+.container{max-width:1200px;margin:auto;padding:20px}
+a{text-decoration:none;color:inherit}
